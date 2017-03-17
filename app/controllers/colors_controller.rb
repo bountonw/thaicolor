@@ -1,5 +1,5 @@
 class ColorsController < ApplicationController
   def index
-    @color = Color.all
+    @colors = Color.all
   end
 end
