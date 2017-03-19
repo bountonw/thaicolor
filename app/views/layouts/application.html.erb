@@ -10,6 +10,30 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="wrapper">
+
+      <%= yield %>
+
+    </div>
+
+
+    <div class="push"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row no-gutters">
+          <!--
+            Best practices for using <a> tag attributes for accessible websites
+              https://silktide.com/i-thought-title-text-improved-accessibility-i-was-wrong/
+              https://www.sitepoint.com/15-rules-making-accessible-links/
+              https://www.w3.org/TR/WCAG20-TECHS/H30.html
+          -->
+
+          <div id="footer1" class="col-8">Coded March 2017 by Brian Wilson&nbsp;</div> 
+          <div id="footer2" class="col-4">while attending <a href="http://www.thefirehoseproject.com/" target="_blank">The Firehose Project<span class="sr-only">Opens in new window</span></a></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
