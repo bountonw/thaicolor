@@ -7,18 +7,15 @@ html {
   overflow: hidden;
 }
 
-
 body {
   height: 100%;
   margin: 0;
   overflow: auto;
 }
 
-.wrapper {
-  margin-bottom: -50px; 
-  min-height: 100%;
-}
-
+/*---------------*/
+/* Accessibility */
+/*---------------*/
 .sr-only {
   position: absolute;
   width: 1px;

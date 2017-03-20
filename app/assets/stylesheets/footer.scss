@@ -1,43 +1,64 @@
-.footer {
-  position: absolute;
-  bottom: 0;
+/*---------------*/
+/* Sticky Footer */
+/*---------------*/
+.wrapper {
+  margin-bottom: -60px; 
+  min-height: 100%;
+}
+
+footer {
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  background-color: #FFD700;  /* gold */
-  display: flex;              /* used with align-items */
-  align-items: center;        /* for vertically centered text */
+  margin: 0;
 }
 
 .footer,
 .push {
-  height: 50px;
+  height: 60px;
 }
 
-footer {
-  margin: 0;
-  
-  width: 100%;
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #FFD700;  /* gold */
+  display: flex;              
+  align-items: center;  
 }
 
-
-/* 
-  Regarding no-gutters
-    https://v4-alpha.getbootstrap.com/layout/grid/#no-gutters
-    https://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ 
-*/
-
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+/*------------------------------------------*/
+/* Positioning footer text on small divices */
+/*------------------------------------------*/
+@media(max-width: 674px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-#footer1 {
-  float: left;
-  text-align: right;
+/*----------------------------------------------------*/
+/* Positioning footer text on Medium to large divices */
+/*----------------------------------------------------*/
+@media(min-width: 675px) {
+  .footer {
+    justify-content: flex-end;
+  }
+ footer span:last-of-type {
+  margin-right: 2%;
+  }
 }
 
-#footer2 {
-  float: left;
-  text-align: left;
+/*------------------------*/
+/* Formatting footer text */
+/*------------------------*/
+footer span {
+  color:  #708090; /* slategrey */
+}
+
+footer a {
+  text-decoration: underline;
+  color:  #708090; /* slategrey */
+}
+
+footer a:hover, footer a:visited, footer a:active {
+  font-weight: 600;
+  color: #5c6c7c;
 }
