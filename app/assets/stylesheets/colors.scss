@@ -30,7 +30,7 @@ body {
   margin-bottom: 60px; /* Corresponding to footer height */
   display: flex;
   height: 100%;
-  flex-shrink: 2;
+  flex-shrink: 1;
 }
 
 nav {
@@ -61,12 +61,74 @@ main a:hover, main a:visited, main a:active {
 
 }
 
+.colorbox {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .about {
   max-width: 600px;
   margin: 60px auto 0 auto;
   padding-right: 1.5rem;
   height: 100%;
+}
+
+/*---------------*/
+/* Sticky Headers and Footers */
+/*---------------*/
+header, footer {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+}
+
+.header {
+  background-color: #708090;
+  top: 0; 
+  justify-content: center;
+  height: 90px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #FFD700;
+}
+
+.footer {
+  bottom: 0;
+  background-color: #FFD700;  /* gold */
+  height: 60px;
+}
+
+/*------------------------*/
+/* Formatting header and footer text */
+/*------------------------*/
+header, footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ft-text {
+  color:  #708090; /* slategrey */
+  font-size: .9rem;
+}
+
+footer a {
+  text-decoration: underline;
+  color:  #708090; /* slategrey */
+}
+
+footer a:hover, footer a:visited, footer a:active {
+  font-weight: 600;
+  color: #5c6c7c;
 }
 
 /*---------------*/

@@ -1,0 +1,64 @@
+/*-------------------*/
+/* For small devices */
+/*-------------------*/
+@media (max-width: 674px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .colorbox {
+    height: 20%;
+    flex-basis: 50%;
+  }
+
+  .colorbox:nth-child(1) {
+    background-color: black;
+    color: white;
+  }
+
+  .colorbox:nth-child(2) {
+    background-color: white;
+    color: black;
+  }
+
+  .colorbox:nth-child(3) {
+    background-color: green;
+    color: orange;
+  }
+
+  .colorbox:nth-child(4) {
+    background-color: yellow;
+    color: blue;
+  }
+
+  .colorbox:nth-child(5) {
+    background-color: red;
+    color: blue;
+  }
+
+  .colorbox:nth-child(6) {
+    background-color: blue;
+    color: yellow;
+  }
+
+  .colorbox:nth-child(7) {
+    background-color: skyblue;
+    color: maroon;
+  }
+
+  .colorbox:nth-child(8) {
+    background-color: pink;
+    color: brown;
+  }
+
+  .colorbox:nth-child(9) {
+    background-color: brown;
+    color: violet;
+  }
+
+  .colorbox:nth-child(10) {
+    background-color: grey;
+    color: orange;
+  }
+}
