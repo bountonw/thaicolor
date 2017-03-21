@@ -37,12 +37,12 @@ nav {
   font-size: 1.2rem;
 }
 
-nav a {
+main a {
   text-decoration: underline;
   color: black;
 }
 
-nav a:hover, nav a:visited, nav a:active {
+main a:hover, main a:visited, main a:active {
   text-decoration: underline;
   color: black;
   font-weight: 600;
@@ -56,6 +56,12 @@ nav a:hover, nav a:visited, nav a:active {
   height: 100%;
   font-family: THSarabanNew, 'Noto Sans Thai UI', sans-serif;
   font-size: 2rem;
+}
+
+.about {
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  padding-right: 1.5rem;
 }
 
 /*---------------*/
