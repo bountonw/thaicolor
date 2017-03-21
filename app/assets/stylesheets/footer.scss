@@ -8,6 +8,7 @@ header, footer {
   margin: 0;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .header {

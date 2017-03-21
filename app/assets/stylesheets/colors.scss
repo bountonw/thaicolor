@@ -12,12 +12,22 @@ body {
   margin: 0;
   overflow: auto;
   font-size: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+@font-face {
+  font-family: THSarabanNew;
+  src: url(../fonts/THSarabunNew-Bold.woff);
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosansthaiui.css);
 
 .main {
   margin-top: 90px; /* Corresponding to header height */
   margin-bottom: 60px; /* Corresponding to footer height */
   display: flex;
+  height: 100%;
 }
 
 nav {
@@ -27,10 +37,25 @@ nav {
   font-size: 1.2rem;
 }
 
+nav a {
+  text-decoration: underline;
+  color: black;
+}
+
+nav a:hover, nav a:visited, nav a:active {
+  text-decoration: underline;
+  color: black;
+  font-weight: 600;
+}
+
 .index {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  font-family: THSarabanNew, 'Noto Sans Thai UI', sans-serif;
+  font-size: 2rem;
 }
 
 /*---------------*/
