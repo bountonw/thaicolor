@@ -30,7 +30,7 @@ body {
   margin-bottom: 60px; /* Corresponding to footer height */
   display: flex;
   height: 100%;
-  flex-shrink: 1
+  flex-shrink: 2;
 }
 
 nav {
@@ -54,9 +54,8 @@ main a:hover, main a:visited, main a:active {
 .index {
   width: 100%;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  height: calc(100%-150px);
+  height: 100%;
   font-family: CSPraJad, 'Noto Sans Thai UI', sans-serif;
   font-size: 2rem;
 
