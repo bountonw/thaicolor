@@ -18,7 +18,16 @@ body {
 
 @font-face {
   font-family: THSarabanNew;
-  src: url(../fonts/THSarabunNew-Bold.woff);
+  src: font_url('THSarabunNewBold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CSPraJad;
+  src: font_url('CSPraJad.woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @import url(//fonts.googleapis.com/earlyaccess/notosansthaiui.css);
@@ -54,8 +63,9 @@ main a:hover, main a:visited, main a:active {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
-  font-family: THSarabanNew, 'Noto Sans Thai UI', sans-serif;
+  font-family: CSPraJad, 'Noto Sans Thai UI', sans-serif;
   font-size: 2rem;
+
 }
 
 .about {
