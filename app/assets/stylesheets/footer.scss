@@ -1,27 +1,35 @@
 /*---------------*/
-/* Sticky Footer */
+/* Sticky Headers and Footers */
 /*---------------*/
-.wrapper {
-  margin-bottom: -60px; 
-  min-height: 100%;
-}
 
-footer {
+header, footer {
+  position: absolute;
   width: 100%;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
-.footer,
-.push {
-  height: 60px;
+.header {
+  background-color: #708090;
+  top: 0; 
+  justify-content: center;
+  height: 90px;
 }
+
+
+.logo {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #FFD700;
+}
+
+
 
 .footer {
-  position: absolute;
   bottom: 0;
   background-color: #FFD700;  /* gold */
-  display: flex;              
-  align-items: center;  
+  height: 60px;
 }
 
 /*------------------------------------------*/
@@ -41,16 +49,21 @@ footer {
   .footer {
     justify-content: flex-end;
   }
- footer span:last-of-type {
-  margin-right: 2%;
+  .ft-text:last-of-type {
+    margin-right: 2%;
   }
 }
 
 /*------------------------*/
-/* Formatting footer text */
+/* Formatting header and footer text */
 /*------------------------*/
-footer span {
+header, footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ft-text {
   color:  #708090; /* slategrey */
+  font-size: .9rem;
 }
 
 footer a {

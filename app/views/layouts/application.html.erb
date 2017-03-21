@@ -2,25 +2,37 @@
 <html>
   <head>
     <title>Thaicolor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
   </head>
 
   <body>
+    <%= link_to root_path, class: 'logo' do %>
+      <header class="header" role="header">
+        <h1 class="hd-text">Learn Thai Colors</h1>
+      </header>
+    <% end %>
 
-    <div class="wrapper">
+    <main class="main" role="main">
 
+      <nav>
+        <%= link_to 'About', about_path %>
+      </nav>
+      
       <%= yield %>
 
-    </div>
+    </main>
 
-    <div class="push"></div>
-    <footer class="footer">
-      <span>Coded March 2017 by Brian Wilson&nbsp;</span> 
-      <span>while attending <a href="http://www.thefirehoseproject.com/" target="_blank">The Firehose Project<span class="sr-only">Opens in new window</span></a></span>
+    <!--div class="push"></div>-->
+    <footer class="footer" role="footer">
+      <span class="ft-text">Coded March 2017 by <a href="https://github.com/bountonw">Brian Wilson</a><span class="sr-only">Opens in new window</span>&nbsp;</span> 
+      <span class="ft-text">while attending <a href="http://www.thefirehoseproject.com/" target="_blank">The Firehose Project<span class="sr-only">Opens in new window</span></a></span>
     </footer>
+
   </body>
 </html>
